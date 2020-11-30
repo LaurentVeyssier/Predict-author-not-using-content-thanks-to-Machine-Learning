@@ -22,6 +22,8 @@ A SVC classifier is trained for the classification task over the 24 possible aut
 
 # Results
 
+The trained model is evaluated on unseen text data (10% of the corpus). The model then predicts the corresponding author.
+
 The performance achieved is close to perfection. Achieved classification accuracy is above 99% in average with f1-scores > 0.99 on all authors. The model is able to predict the author based on a sample of text using only function words with nearly perfect accuracy !
 
 ![](metrics.jpg)
