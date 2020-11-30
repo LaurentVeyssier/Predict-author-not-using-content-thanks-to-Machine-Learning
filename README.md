@@ -1,7 +1,7 @@
 # Predict-author-not-using-content-but-using-function-words
 Machine learning classifier to predict author from a piece of Literature without using the content
 
-This project continues to explore feature extraction from written text to predict author, gender, dialect, native language, and sometimes even age and class. This is a continuation of my previous project []() which provides additional background information and principles for those interested. The purpose of this notebook is a style-based classification of authors, based on printed books.
+This project continues to explore feature extraction from written text to predict author, gender, dialect, native language, and sometimes even age and class. This is a continuation of my previous project [Predict-english-speaking-region-of-origin-by-analyzing-tweets](https://github.com/LaurentVeyssier/Predict-english-speaking-region-of-origin-by-analyzing-tweets) which provides additional background information and principles for those interested. The purpose of this notebook is a style-based classification of authors, based on printed books.
 
 # Project objective
 
