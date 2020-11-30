@@ -13,20 +13,20 @@ The model is trained using a pre-defined vocabulary made of usual **function wor
 
 # Dataset used
 
-A corpus of literature is used covering 24 different english authors. There are between 20 to 80 books and several hundreds of excerpts per author. Each sample is 5000 characters long. That makes sure that we learn to generalize and not just predicting individual books. The dataset can be prepared from a larger on avaialable [here](https://web.eecs.umich.edu/~lahiri/gutenberg_dataset.html).
+A corpus of literature is used covering 24 different english authors. There are between 20 to 80 books and several hundreds of excerpts per author. Each excerpt sample is 5000 characters long. That makes sure that we learn to generalize and not just predicting individual books. The dataset can be prepared from a larger one available [here](https://web.eecs.umich.edu/~lahiri/gutenberg_dataset.html).
 
 # Model
 
-The excerpts are fitted using sklearn vectorizer over a pre-defined dictionary of function words (incl. bigrams). The dictionary comprises over 10k function words like "the", "of", "and", "to", "a", "in", "i", "he", "that", "was", "it", "his", "you", "with", "as",...
-Bigrams are used as part of the vocabulary and are already included in the pre-defined dictonary. These are chunks like 'in the', 'from the', 'by those', 'with these',...
+The excerpts are fitted using sklearn vectorizer over a pre-defined dictionary of function words. The dictionary comprises over 10k function words like "the", "of", "and", "to", "a", "in", "i", "he", "that", "was", "it", "his", "you", "with", "as",...
+Bigrams are also used and are already included in the pre-defined dictonary. These are chunks like 'in the', 'from the', 'by those', 'with these',...
 
-Each text is therefore transformed into a wordcount vector of the size of the function words dictionary. Content words are totally ignored.
-For the classification task, a SVC classifier is trained over the 24 possible authors.
+Each text is transformed into a wordcount vector of the size of the function words dictionary. Content words are **totally ignored**.
+For the classification task, a SVC classifier is trained over the 24 possible authors (90% of the corpus).
 
 # Results
 
 The trained model is evaluated on unseen text data (10% of the corpus). The model predicts the corresponding author.
 
-The performance achieved is close to perfection. Achieved classification accuracy is above 99% in average with f1-scores > 0.99 on all authors. The model is able to predict the author based on a sample of text using only function words with nearly perfect accuracy !
+The performance achieved is close to perfection. Achieved classification accuracy is above 99% in average with f1-scores > 0.99 for most of the authors. The model is able to predict the author based on a sample of text using only function words with nearly perfect accuracy !
 
 ![](metrics.jpg)
