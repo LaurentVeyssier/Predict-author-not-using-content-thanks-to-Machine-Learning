@@ -5,13 +5,13 @@ This short project explores feature extraction to predict author, gender, dialec
 
 # Project objective
 
-The objective is to predict the author of a piece of literature by looking at style characteristics. In languages like English, **function words** are a good representation for style and authorship. Function words are things like pronouns (you, me), conjunctions (and, or), prepositions (in, on), auxiliary verbs (was, were), and wh-words (who, what). Function words are illustrated in the examples below. Each of these sentences means the same thing. But the linguistic form is a bit different for each sentence. The content words are highlighted in yellow. These are mostly the same across the sentences. But the other words, the function words in green, change quite a bit from one sentence to the next.
+The objective is to predict the author of a piece of literature by looking at style characteristics. In languages like English, **function words** are a good representation for style and authorship. Function words are things like pronouns (you, me), conjunctions (and, or), prepositions (in, on), auxiliary verbs (was, were), and wh-words (who, what). 
+
+Function words are illustrated in the examples below. Each of these sentences means the same thing. But the linguistic form is a bit different for each sentence. The content words are highlighted in yellow. These are mostly the same across the sentences. But the other words, the function words in green, change quite a bit from one sentence to the next.
 
 ![](function_words.jpg)
 
-**Content related words** are not used.
-
-The model is trained using a pre-defined vocabulary made of usual **function words**. This exemplifies the determination of the style with these words only.
+The model is trained using a pre-defined vocabulary made of usual **function words**. This exemplifies the determination of the style with these words only. **Content related words** are not used.
 
 # Dataset used
 
