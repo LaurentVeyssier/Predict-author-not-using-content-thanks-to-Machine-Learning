@@ -15,7 +15,7 @@ The model is trained using a pre-defined vocabulary made of usual **function wor
 
 # Dataset used
 
-A corpus of literature is used covering 24 different english authors. There are between 20 to 80 books and several hundreds of excerpts per author. Each excerpt sample is 5000 characters long. That makes sure that we learn to generalize and not just predicting individual books. The dataset can be prepared from a larger one available [here](https://web.eecs.umich.edu/~lahiri/gutenberg_dataset.html).
+A corpus of literature is used covering 24 different english authors. There are between 20 to 80 books and several hundreds of excerpts per author. Each excerpt sample is circa 28.500 characters long. That makes sure that we learn to generalize and not just predicting individual books. The dataset can be prepared from a larger one available [here](https://web.eecs.umich.edu/~lahiri/gutenberg_dataset.html).
 
 # Model
 
